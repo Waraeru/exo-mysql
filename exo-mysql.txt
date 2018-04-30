@@ -1,0 +1,49 @@
+PLUS FACILE
+
+1.
+SHOW DATABASES;
+USE webacademie;
+SHOW TABLES;
+
+2.
+DESCRIBE film;
+
+3.
+SELECT titre AS titre_film FROM film; 
+
+4.
+SELECT titre FROM film WHERE id_distrib IS NULL;
+
+5.
+SELECT titre FROM film WHERE date_debut_affiche <= '2000-12-31' ORDER BY date_debut_affiche DESC LIMIT 10;
+
+
+
+
+
+MOINS FACILE
+
+1.
+SELECT titre FROM film WHERE titre LIKE 'A%' AND id_genre BETWEEN '1' AND '2';
+
+2.
+SELECT SUM(nbr_siege) AS nombre_siege FROM salle;
+
+3.
+SELECT SUM(nbr_siege) AS nombre_siege FROM salle GROUP BY etage_salle;
+
+4.
+SELECT nom_salle FROM salle WHERE nbr_siege < '200';
+
+5.
+SELECT titre AS titre_cool FROM film WHERE titre LIKE '%day%' AND id_genre = '2';
+
+
+
+
+
+PAS FACILE
+
+1.
+
+
